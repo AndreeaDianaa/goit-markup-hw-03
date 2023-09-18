@@ -33,7 +33,7 @@ ul {
 
 img {
     display: block;
-    max-width: 100%;
+    min-width: 100%;
     height: auto;
 }
 
@@ -51,7 +51,7 @@ body {
 
 .global-header .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -65,6 +65,7 @@ body {
 
 .contact-info {
     display: flex;
+    margin-left: 385px;
     gap: 40px;
 }
 
@@ -75,8 +76,11 @@ body {
 
 /* Container Style */
 .container {
-    width: 1200px;
+    width: 1200px 100vw;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 /* Paddings for class section*/
@@ -104,6 +108,8 @@ body {
 
 /* Logo */
 .logo {
+    padding-left: 25px;
+    margin-right: 93px;
     font-family: "Raleway", sans-serif;
     font-size: 26px;
     font-weight: 700;
@@ -151,23 +157,27 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 /* Main Title */
 .main-title {
     align-self: center;
+    margin-bottom: 30px;
     color: var(--white-text);
+    width: 697px;
+    text-align: center;
     font-size: 44px;
     font-weight: 900;
     line-height: 136.364%;
+    letter-spacing: 2.64px;
     text-transform: uppercase;
 }
 
 /* Buttons */
 .main-button {
-    align-self: center;
     background-color: var(--blue-text);
     border: none;
     color: var(--white-text);
@@ -296,18 +306,6 @@ body {
 
 /* Second Title for Porducts and Services*/
 
-.card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    list-style: none;
-}
-
-.item {
-    flex-basis: calc((100% - 90px) / 3);
-
-}
-
 .card-portfolio {
     background-color: var(--background-color);
     border-bottom: 1px solid var(--border-color);
@@ -316,6 +314,18 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px 24px;
+}
+
+.card-set {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    list-style: none;
+}
+
+.item {
+    flex-basis: calc((100% - 60px) / 3);
+
 }
 
 .second-title-products-services {
@@ -331,11 +341,31 @@ body {
 }
 
 /* Global Footer */
+.footer-address {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 12px;
+    list-style: none;
+}
+
+.contact-footer {
+    flex-basis: calc((100% - 24px) / 3);
+
+}
+
+.global-footer .footer-logo {
+    padding-top: 60px;
+    margin-bottom: 28px;
+    padding-left: 0;
+    padding-right: auto;
+}
+
 .global-footer {
     background-color: var(--footer-background-color);
 }
 
 .footer-address {
+    padding-bottom: 60px;
     color: var(--white-text);
     font-size: 14px;
     font-style: normal;
