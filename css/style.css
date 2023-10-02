@@ -85,8 +85,8 @@ body {
 
 /* Paddings for class section*/
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 25px;
+
 }
 
 /* Navigation */
